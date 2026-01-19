@@ -1,0 +1,57 @@
+🚦 Traffic Rule Violation Analyzer (Java)
+📌 Project Overview
+
+This Java console application simulates a traffic inspection system that analyzes riders for common traffic rule violations.
+It processes data for 10 riders, checks eligibility based on age, helmet usage, and license possession, and generates a final violation report.
+
+The project focuses on looping concepts, conditional logic, counters, and real-world problem solving.
+
+🚀 Features
+
+Checks rider eligibility based on age
+
+Identifies underage riders
+
+Detects helmet violations
+
+Detects license violations
+
+Uses counters to generate a summary report
+
+Skips unnecessary checks using continue
+
+🛠️ Technologies Used
+
+Java
+
+Scanner class for input
+
+for loop
+
+Conditional statements (if)
+
+Control flow using continue
+
+🧠 Program Logic
+
+The program loops through 10 riders
+
+For each rider:
+
+Checks if the rider is under 18
+
+If yes, marks as underage and skips further checks
+
+Checks helmet usage
+
+Checks license availability
+
+Counts violations separately
+
+Displays a final report showing:
+
+Total underage riders
+
+Helmet fine count
+
+License fine count
