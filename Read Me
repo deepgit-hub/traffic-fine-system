@@ -1,57 +1,65 @@
-🚦 Traffic Rule Violation Analyzer (Java)
-📌 Project Overview
+# Rider Safety Monitoring System (Java)
 
-This Java console application simulates a traffic inspection system that analyzes riders for common traffic rule violations.
-It processes data for 10 riders, checks eligibility based on age, helmet usage, and license possession, and generates a final violation report.
+This is a Java console-based program that collects details of riders and generates a final report based on traffic rule violations.
 
-The project focuses on looping concepts, conditional logic, counters, and real-world problem solving.
+## Features
+- Checks rider eligibility based on age
+- Counts underage riders
+- Records helmet violations
+- Records license violations
+- Displays a final summary report
 
-🚀 Features
+## Logic Used in Program
 
-Checks rider eligibility based on age
+The program processes details for 10 riders and applies these rules:
 
-Identifies underage riders
+1. If age is below 18:
+   - Rider is marked as underage
+   - Remaining inputs are skipped
 
-Detects helmet violations
+2. Helmet Check:
+   - If rider is not wearing a helmet → counted for fine
 
-Detects license violations
+3. License Check:
+   - If rider does not have a license → counted for fine
 
-Uses counters to generate a summary report
+4. Final report displays:
+   - Total underage riders
+   - Total helmet violations
+   - Total license violations
 
-Skips unnecessary checks using continue
+## Technologies Used
+- Java
+- Scanner class
+- Loops (for loop)
+- Conditional statements (if–else)
+- continue statement
 
-🛠️ Technologies Used
+## How to Run
 
-Java
+Compile:
+```
+javac problem10.java
+```
 
-Scanner class for input
+Run:
+```
+java problem10
+```
 
-for loop
+## Sample Output
 
-Conditional statements (if)
+```
+Rider 1
+Enter your age : 20
+Enter 0 if rider wears helmet or 1 if rider didn't: 1
+Enter 0 if rider has license or 1 if rider didn't: 0
 
-Control flow using continue
+-----------------Final Report----------------
+UnderAge Riders are : 1
+Fine for no Helmet  : 2
+Fine for no License : 1
+```
 
-🧠 Program Logic
-
-The program loops through 10 riders
-
-For each rider:
-
-Checks if the rider is under 18
-
-If yes, marks as underage and skips further checks
-
-Checks helmet usage
-
-Checks license availability
-
-Counts violations separately
-
-Displays a final report showing:
-
-Total underage riders
-
-Helmet fine count
-
-License fine count
+## Author
+Deepak
